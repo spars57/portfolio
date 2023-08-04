@@ -9,8 +9,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "add-domain": "echo \"brunomoisao.dev\" ",
-    "predeploy": "npm run build && npm add-domain",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

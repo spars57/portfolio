@@ -1,0 +1,5 @@
+dark blue: #222E50
+light blue: #007991
+grenish blue: #439A86
+light grenish blue: #BCD8C1
+yellow: #E9D985

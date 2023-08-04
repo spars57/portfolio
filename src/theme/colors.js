@@ -1,0 +1,7 @@
+export const COLORS = {
+  DARK_BLUE: '#222E50',
+  LIGHT_BLUE: '#007991',
+  GREEN_BLUE: '#439A86',
+  LIGHT_GREEN_BLUE: '#BCD8C1',
+  YELLOW: '#E9D985',
+}

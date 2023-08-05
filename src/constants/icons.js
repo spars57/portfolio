@@ -14,4 +14,10 @@ export const ICONS = {
   CSS3: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   JAVASCRIPT:
     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+  SPRING:
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
+  TAILWIND:
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+  GITHUB:
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
 }

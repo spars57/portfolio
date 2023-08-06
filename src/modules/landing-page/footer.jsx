@@ -1,9 +1,14 @@
+import DarkModeIcon from '@mui/icons-material/DarkMode'
+import LightModeIcon from '@mui/icons-material/LightMode'
 import { Box, Tooltip, Typography } from '@mui/material'
 import { CustomIcon } from '../../components/icon'
 import { ICONS } from '../../constants/icons'
+import MODE from '../../constants/mode'
+import { useMode } from '../../hooks/useMode'
 import { openNewTab } from '../../utils/open-new-tab'
-
 export const Footer = () => {
+  const { mode, switchMode } = useMode()
+
   return (
     <Box
       position="fixed"
@@ -15,7 +20,7 @@ export const Footer = () => {
       justifyContent="center"
       alignItems="center"
     >
-      <Typography variant="caption" color="primary">
+      <Typography variant="caption" color={`primary.${mode}`}>
         Copyright © 2023 by Bruno Moisão. All rights reserved.{' '}
       </Typography>
       <Box display="flex" flexDirection="row">
@@ -29,6 +34,15 @@ export const Footer = () => {
             }
           >
             <CustomIcon src={ICONS.LINKEDIN} />
+          </Box>
+        </Tooltip>
+        <Tooltip title={`Switch mode`}>
+          <Box onClick={switchMode}>
+            {mode === MODE.LIGHT ? (
+              <DarkModeIcon fontSize="small" color="secondary" />
+            ) : (
+              <LightModeIcon fontSize="small" color="primary" />
+            )}
           </Box>
         </Tooltip>
         <Tooltip title="Github">

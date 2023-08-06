@@ -18,10 +18,14 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: COLORS.LIGHT_GREEN_BLUE,
+      main: COLORS.WHITE,
+      dark: COLORS.WHITE,
+      light: COLORS.BLACK,
     },
     secondary: {
-      main: COLORS.LIGHT_BLUE,
+      main: COLORS.BLACK,
+      dark: COLORS.BLACK,
+      light: COLORS.WHITE,
     },
   },
 })

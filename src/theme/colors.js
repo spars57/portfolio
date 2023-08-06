@@ -4,4 +4,6 @@ export const COLORS = {
   GREEN_BLUE: '#439A86',
   LIGHT_GREEN_BLUE: '#BCD8C1',
   YELLOW: '#E9D985',
+  BLACK: '#0D0D0D',
+  WHITE: '#FFFFFF',
 }

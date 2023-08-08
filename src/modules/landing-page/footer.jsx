@@ -11,18 +11,16 @@ export const Footer = () => {
 
   return (
     <Box
+      bgcolor={`secondary.${mode}`}
       position="fixed"
-      bottom={10}
-      mt={3}
+      bottom={0}
+      p={0.5}
       display="flex"
       width="100%"
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
     >
-      <Typography variant="caption" color={`primary.${mode}`}>
-        Copyright © 2023 by Bruno Moisão. All rights reserved.{' '}
-      </Typography>
       <Box display="flex" flexDirection="row">
         <Tooltip title="LinkedIn">
           <Box
@@ -54,6 +52,9 @@ export const Footer = () => {
           </Box>
         </Tooltip>
       </Box>
+      <Typography variant="caption" color={`primary.${mode}`}>
+        Copyright © 2023 by Bruno Moisão. All rights reserved.{' '}
+      </Typography>
     </Box>
   )
 }

@@ -15,6 +15,10 @@ export const L_ENGLISH = {
     aboutText3:
       'Today, I help small businesses and entrepreneurs globalize their business through e-commerce solutions.',
   },
+  footer: {
+    email: 'Email',
+    phoneNumber: 'Phone Number',
+  },
   darkmode: 'Dark mode',
   lightmode: 'Light mode',
   languages: {

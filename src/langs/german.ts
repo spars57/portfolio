@@ -6,14 +6,18 @@ export const L_GERMAN = {
     about: 'Über',
     contact: 'Kontakte',
     projects: 'Projekte',
-    aboutMe: 'Über Mich',
+    aboutMe: 'Über mich',
     tools: 'Werkzeuge',
     aboutText1:
-      'Ich bin ein Entwickler, spezialisiert auf Webanwendungen. Ich habe meine Karriere 2018 im Alter von 15 Jahren begonnen, als ich meine ersten Schritte in die Welt der Programmierung gemacht habe.',
+      'Ich bin ein Entwickler, der auf Webanwendungen spezialisiert ist. Ich habe meine Karriere im Jahr 2018 im Alter von 15 Jahren begonnen, wo ich meine ersten Schritte in die Welt der Programmierung gemacht habe.',
     aboutText2:
-      'Im Jahr 2022, im Alter von 19 Jahren, habe ich meinen ersten Vertrag als Junior Softwareentwickler abgeschlossen, was mir die Möglichkeit gab, meine erste SMMA (Social Media und Marketing Agentur) zu gründen.',
+      'Im Jahr 2022, im Alter von 19 Jahren, habe ich meinen ersten Vertrag als Junior Software Engineer abgeschlossen, der mir die Voraussetzungen für die Gründung meiner ersten SMMA (Social Media und Marketing Agentur) geboten hat.',
     aboutText3:
       'Heute helfe ich kleinen Unternehmen und Unternehmern, ihr Geschäft durch E-Commerce-Lösungen zu globalisieren.',
+  },
+  footer: {
+    email: 'E-Mail',
+    phoneNumber: 'Telefonnummer',
   },
   darkmode: 'Dunkelmodus',
   lightmode: 'Hellmodus',

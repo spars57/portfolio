@@ -15,6 +15,10 @@ export const L_PORTUGUESE = {
     aboutText3:
       'Hoje ajudo pequenas empresas e pequenos empresários a globalizarem o seu negócio através de soluções de e-commerce.',
   },
+  footer: {
+    email: 'Email',
+    phoneNumber: 'Contacto',
+  },
   darkmode: 'Modo escuro',
   lightmode: 'Modo claro',
   languages: {

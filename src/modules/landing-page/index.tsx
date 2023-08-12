@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../../components/footer';
 import { Navigation } from '../../components/navigation';
 import useLanguage from '../../hooks/useLanguage';
 import useTheme from '../../hooks/useTheme';
@@ -16,13 +17,7 @@ function LandingPage() {
             : 'text-white bg-slate-900'
         }`}
       >
-        <Navigation
-          language={language}
-          languageKey={languageKey}
-          switchLanguage={switchLanguage}
-          switchMode={switchMode}
-          mode={mode}
-        />
+        <Navigation />
 
         <div className="w-full 3 flex flex-row text- p-3 justify-between"></div>
         <div
@@ -100,7 +95,7 @@ function LandingPage() {
             {language?.landingPage?.aboutMe}
           </div>
         </div>
-        <div className="w-full flex flex-column justify-center mt-5 mb-5">
+        <div className="w-full flex flex-column justify-center mt-5 mb-40">
           <div className="flex flex-column w-2/3">
             <div className="w-full">
               {language?.landingPage?.aboutText1}
@@ -113,9 +108,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="fixed bottom-0 flex flex-row w-full justify-center text-xs opacity-20 p-1">
-          Copyright © Bruno Moisão 2023. All rights reserved.
-        </div>
+        <Footer />
       </div>
     </>
   );

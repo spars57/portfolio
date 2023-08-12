@@ -1,21 +1,16 @@
 import React, { FC, useState } from 'react';
+import { useNavigate } from 'react-router';
+import { PATHS } from '../../config/paths';
+import useLanguage from '../../hooks/useLanguage';
+import useTheme from '../../hooks/useTheme';
 
-export type NavigationProps = {
-  mode: string;
-  language: Record<string, any>;
-  languageKey: string;
-  switchLanguage: (props: any) => any;
-  switchMode: (props: any) => any;
-};
+export type NavigationProps = {};
 
-export const Navigation: FC<NavigationProps> = ({
-  language,
-  switchLanguage,
-  switchMode,
-  languageKey,
-  mode,
-}) => {
+export const Navigation: FC<NavigationProps> = ({}) => {
   const [open, setOpen] = useState(false);
+  const { mode, switchMode } = useTheme();
+  const navigate = useNavigate();
+  const { language, languageKey, switchLanguage } = useLanguage();
 
   const toggleMenu = () => setOpen(!open);
 
@@ -30,6 +25,7 @@ export const Navigation: FC<NavigationProps> = ({
       className={
         mode === 'light' ? 'bg-white text-gray-900' : 'text-white bg-slate-900'
       }
+      style={{ borderBottom: '1px solid lightgray' }}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center">
@@ -83,6 +79,7 @@ export const Navigation: FC<NavigationProps> = ({
           >
             <li>
               <a
+                onClick={() => navigate(PATHS.ABOUT)}
                 className={
                   mode === 'light'
                     ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
@@ -94,17 +91,7 @@ export const Navigation: FC<NavigationProps> = ({
             </li>
             <li>
               <a
-                className={
-                  mode === 'light'
-                    ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                    : 'text-white bg-slate-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                }
-              >
-                {language.landingPage.contact.toUpperCase()}
-              </a>
-            </li>
-            <li>
-              <a
+                onClick={() => navigate(PATHS.PROJECTS)}
                 className={
                   mode === 'light'
                     ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
@@ -114,20 +101,7 @@ export const Navigation: FC<NavigationProps> = ({
                 {language.landingPage.projects.toUpperCase()}
               </a>
             </li>
-            <li>
-              <a
-                onClick={switchMode}
-                className={
-                  mode === 'light'
-                    ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                    : 'text-white bg-slate-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                }
-              >
-                {mode === 'light'
-                  ? language.darkmode.toUpperCase()
-                  : language.lightmode.toUpperCase()}
-              </a>
-            </li>
+
             <li>
               <a
                 className={
@@ -181,6 +155,29 @@ export const Navigation: FC<NavigationProps> = ({
                     </option>
                   </select>
                 </div>
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={switchMode}
+                className={
+                  mode === 'light'
+                    ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    : 'text-white bg-slate-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                }
+              >
+                {mode === 'light' ? (
+                  <img
+                    className="w-6"
+                    src="https://www.svgrepo.com/show/515776/dark-mode.svg"
+                  />
+                ) : (
+                  <img
+                    style={mode === 'dark' ? { filter: 'invert(1)' } : {}}
+                    className="w-6"
+                    src="https://www.svgrepo.com/show/432507/light-mode.svg"
+                  />
+                )}
               </a>
             </li>
           </ul>

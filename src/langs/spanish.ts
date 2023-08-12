@@ -1,22 +1,26 @@
 export const L_SPANISH = {
   landingPage: {
-    title: 'Desarrollador Frontend en React 👋🏻',
+    title: 'Desarrollador Frontend React 👋🏻',
     description:
-      '¡Hola! Soy Bruno Moisão, un desarrollador Frontend ubicado en Lisboa, Portugal 📍',
+      '¡Hola! Soy Bruno Moisão, un desarrollador frontend ubicado en Lisboa, Portugal 📍',
     about: 'Acerca de',
-    contact: 'Contacto',
+    contact: 'Contactos',
     projects: 'Proyectos',
-    aboutMe: 'Acerca de Mí',
+    aboutMe: 'Acerca de mí',
     tools: 'Herramientas',
     aboutText1:
       'Soy un desarrollador especializado en aplicaciones web. Comencé mi carrera en 2018 a los 15 años, donde di mis primeros pasos en el mundo de la programación.',
     aboutText2:
-      'En 2022, a los 19 años, cerré mi primer contrato como Ingeniero de Software Junior, lo que me brindó las condiciones para establecer mi primera Agencia de Medios y Marketing en Redes Sociales (SMMA).',
+      'En 2022, a los 19 años, cerré mi primer contrato como Ingeniero de Software Junior, lo que me brindó las condiciones para establecer mi primera SMMA (Agencia de Medios Sociales y Marketing).',
     aboutText3:
-      'Hoy en día, ayudo a pequeñas empresas y emprendedores a globalizar sus negocios a través de soluciones de comercio electrónico.',
+      'Hoy en día, ayudo a pequeñas empresas y emprendedores a globalizar su negocio a través de soluciones de comercio electrónico.',
   },
-  darkmode: 'Modo Oscuro',
-  lightmode: 'Modo Claro',
+  footer: {
+    email: 'Correo electrónico',
+    phoneNumber: 'Número de teléfono',
+  },
+  darkmode: 'Modo oscuro',
+  lightmode: 'Modo claro',
   languages: {
     main: '🌎 Idioma',
     english: '🇬🇧 Inglés',

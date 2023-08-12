@@ -2,18 +2,21 @@ export const L_GERMAN = {
   landingPage: {
     title: 'Frontend React Entwickler 👋🏻',
     description:
-      'Hallo! Ich bin Bruno Moisão, ein Frontend-Entwickler aus Lissabon, Portugal 📍',
-    about: 'Über mich',
+      'Hallo! Ich bin Bruno Moisão, ein Frontend Entwickler aus Lissabon, Portugal 📍',
+    about: 'Über',
     contact: 'Kontakte',
     projects: 'Projekte',
-    aboutMe: 'Über mich',
+    aboutMe: 'Über Mich',
+    tools: 'Werkzeuge',
     aboutText1:
-      'Ich bin ein Entwickler, der sich auf Webanwendungen spezialisiert hat. Ich habe meine Karriere im Jahr 2018 im Alter von 15 Jahren begonnen und meine ersten Schritte in die Welt der Programmierung gemacht.',
+      'Ich bin ein Entwickler, spezialisiert auf Webanwendungen. Ich habe meine Karriere 2018 im Alter von 15 Jahren begonnen, als ich meine ersten Schritte in die Welt der Programmierung gemacht habe.',
     aboutText2:
-      'Im Jahr 2022, im Alter von 19 Jahren, habe ich meinen ersten Vertrag als Junior-Softwareingenieur abgeschlossen, der mir die Bedingungen für die Gründung meiner ersten SMMA (Social Media and Marketing Agency) ermöglichte.',
+      'Im Jahr 2022, im Alter von 19 Jahren, habe ich meinen ersten Vertrag als Junior Softwareentwickler abgeschlossen, was mir die Möglichkeit gab, meine erste SMMA (Social Media und Marketing Agentur) zu gründen.',
     aboutText3:
       'Heute helfe ich kleinen Unternehmen und Unternehmern, ihr Geschäft durch E-Commerce-Lösungen zu globalisieren.',
   },
+  darkmode: 'Dunkelmodus',
+  lightmode: 'Hellmodus',
   languages: {
     main: '🌎 Sprache',
     english: '🇬🇧 Englisch',
@@ -24,5 +27,7 @@ export const L_GERMAN = {
     spanish: '🇪🇸 Spanisch',
     arab: '🇸🇦 Arabisch',
     indian: '🇮🇳 Hindi',
+    chinese: '🇨🇳 Chinesisch',
+    japanese: '🇯🇵 Japanisch',
   },
 };

@@ -7,6 +7,7 @@ export const L_ENGLISH = {
     contact: 'Contacts',
     projects: 'Projects',
     aboutMe: 'About Me',
+    tools: 'Tools',
     aboutText1:
       'I am a developer specialized in Web Applications. I began my career in 2018 at the age of 15, where I took my first steps into the world of programming.',
     aboutText2:
@@ -14,6 +15,8 @@ export const L_ENGLISH = {
     aboutText3:
       'Today, I help small businesses and entrepreneurs globalize their business through e-commerce solutions.',
   },
+  darkmode: 'Dark mode',
+  lightmode: 'Light mode',
   languages: {
     main: '🌎 Language',
     english: '🇬🇧 English',
@@ -24,5 +27,7 @@ export const L_ENGLISH = {
     spanish: '🇪🇸 Spanish',
     arab: '🇸🇦 Arabic',
     indian: '🇮🇳 Hindi',
+    chinese: '🇨🇳 Chinese',
+    japanese: '🇯🇵 Japanese',
   },
 };

@@ -7,6 +7,7 @@ export const L_PORTUGUESE = {
     contact: 'Contactos',
     projects: 'Projetos',
     aboutMe: 'Sobre Mim',
+    tools: 'Ferramentas',
     aboutText1:
       'Sou um desenvolvedor especializado em Aplicações Web. Comecei a minha carreira em 2018 aos 15 anos de idade, altura em que dei os primeiros passos no mundo da programação.',
     aboutText2:
@@ -14,6 +15,8 @@ export const L_PORTUGUESE = {
     aboutText3:
       'Hoje ajudo pequenas empresas e pequenos empresários a globalizarem o seu negócio através de soluções de e-commerce.',
   },
+  darkmode: 'Modo escuro',
+  lightmode: 'Modo claro',
   languages: {
     main: '🌎 Idioma',
     english: '🇬🇧 Inglês',
@@ -23,6 +26,8 @@ export const L_PORTUGUESE = {
     russian: '🇷🇺 Russo',
     spanish: '🇪🇸 Espanhol',
     arab: '🇸🇦 Árabe',
-    indian: '🇮🇳 Hindi',
+    indian: '🇮🇳 Híndi',
+    chinese: '🇨🇳 Chinês',
+    japanese: '🇯🇵 Japonês',
   },
 };

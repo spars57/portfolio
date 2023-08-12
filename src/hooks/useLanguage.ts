@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { L_ARABIC } from '../langs/arabic';
+import { L_CHINESE } from '../langs/chinese';
 import { L_ENGLISH } from '../langs/english';
 import { L_GERMAN } from '../langs/german';
 import { L_HINDI } from '../langs/hindi';
+import { L_JAPANESE } from '../langs/japanese';
 import { L_RUSSIAN } from '../langs/russian';
 import { L_SPANISH } from '../langs/spanish';
 import { L_FRENCH } from './../langs/french';
@@ -11,15 +13,15 @@ import useLocalstorage from './useLocalstorage';
 
 export const languageMapper = {
   en: L_ENGLISH,
-  'en-US': L_ENGLISH,
-  'pt-PT': L_PORTUGUESE,
-  'pt-BR': L_PORTUGUESE,
+  pt: L_PORTUGUESE,
   fr: L_FRENCH,
   de: L_GERMAN,
   ru: L_RUSSIAN,
   es: L_SPANISH,
   ar: L_ARABIC,
   hi: L_HINDI,
+  cn: L_CHINESE,
+  jp: L_JAPANESE,
 } as const;
 
 const useLanguage = () => {
@@ -38,7 +40,7 @@ const useLanguage = () => {
     if (current) {
       setLanguage(current as any);
     } else {
-      setLanguageKey(window.navigator.language as keyof typeof languageMapper);
+      setLanguageKey('en');
     }
   }, []);
 

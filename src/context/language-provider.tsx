@@ -1,15 +1,10 @@
 import React, { FC, PropsWithChildren, useEffect, useState } from 'react';
 
 import useLocalstorage from '../hooks/useLocalstorage';
-import { L_ARABIC } from '../langs/arabic';
-import { L_CHINESE } from '../langs/chinese';
 import { L_ENGLISH } from '../langs/english';
 import { L_FRENCH } from '../langs/french';
 import { L_GERMAN } from '../langs/german';
-import { L_HINDI } from '../langs/hindi';
-import { L_JAPANESE } from '../langs/japanese';
 import { L_PORTUGUESE } from '../langs/portuguese';
-import { L_RUSSIAN } from '../langs/russian';
 import { L_SPANISH } from '../langs/spanish';
 
 type ContextConfiguration = {
@@ -23,12 +18,7 @@ export const languageMapper = {
   pt: L_PORTUGUESE,
   fr: L_FRENCH,
   de: L_GERMAN,
-  ru: L_RUSSIAN,
   es: L_SPANISH,
-  ar: L_ARABIC,
-  hi: L_HINDI,
-  cn: L_CHINESE,
-  jp: L_JAPANESE,
 } as const;
 
 export const LanguageContext = React.createContext<ContextConfiguration>(

@@ -1,37 +1,34 @@
 export const L_FRENCH = {
   landingPage: {
-    title: 'Développeur Frontend React 👋🏻',
+    title: 'Développeur de Sites Web',
     description:
-      'Bonjour ! Je suis Bruno Moisão, un développeur frontend basé à Lisbonne, Portugal 📍',
-    about: 'À propos',
+      'Bonjour ! Je suis Bruno Moisão, un Développeur de Sites Web basé à Lisbonne, Portugal 📍',
+    about: 'À Propos',
     contact: 'Contacts',
     projects: 'Projets',
-    aboutMe: 'À propos de moi',
+    aboutMe: 'À Propos de Moi',
     tools: 'Outils',
     aboutText1:
-      "Je suis un développeur spécialisé dans les applications Web. J'ai commencé ma carrière en 2018 à l'âge de 15 ans, où j'ai fait mes premiers pas dans le monde de la programmation.",
+      "Je suis un Développeur de Sites Web chevronné, dont la carrière a débuté en 2018 alors que je n'avais que 15 ans. C'est à cette époque que j'ai entrepris mon voyage dans le monde de la programmation en créant des jeux 2D avec C++. Ces premiers pas ont allumé ma passion pour la création d'expériences numériques.",
     aboutText2:
-      "En 2022, à l'âge de 19 ans, j'ai signé mon premier contrat en tant qu'ingénieur logiciel junior, ce qui m'a permis de créer ma première SMMA (Agence de médias sociaux et de marketing).",
+      "En 2022, à l'âge de 19 ans, j'ai décroché mon premier contrat en tant qu'Ingénieur Logiciel Junior au sein d'une prestigieuse entreprise britannique. Cette opportunité décisive m'a non seulement offert la plateforme pour perfectionner mes compétences, mais elle a aussi posé les bases pour réaliser mon aspiration d'établir plusieurs entreprises.",
     aboutText3:
-      "Aujourd'hui, j'aide les petites entreprises et les entrepreneurs à mondialiser leur entreprise grâce à des solutions de commerce électronique.",
+      "Pendant cette période, j'ai également osé vendre des services de développement de sites web à des amis et collègues. À travers cette expérience, j'ai découvert un potentiel inhérent pour aider les entreprises naissantes à élargir leur public en créant des identités numériques convaincantes.",
+    aboutText4:
+      "Animé par ma soif de connaissance, j'ai décidé de plonger plus profondément dans ce domaine et d'entreprendre un voyage d'étude du Marketing et de la Psychologie Humaine. Ces disciplines sont depuis devenues des piliers indispensables de mon entreprise, me permettant de mieux comprendre et de mieux me connecter avec le paysage numérique.",
   },
   footer: {
     email: 'E-mail',
-    phoneNumber: 'Numéro de téléphone',
+    phoneNumber: 'Numéro de Téléphone',
   },
-  darkmode: 'Mode sombre',
-  lightmode: 'Mode clair',
+  darkmode: 'Mode Sombre',
+  lightmode: 'Mode Clair',
   languages: {
-    main: '🌎 Langue',
+    main: 'Langue',
     english: '🇬🇧 Anglais',
     portuguese: '🇵🇹 Portugais',
     german: '🇩🇪 Allemand',
     french: '🇫🇷 Français',
-    russian: '🇷🇺 Russe',
     spanish: '🇪🇸 Espagnol',
-    arab: '🇸🇦 Arabe',
-    indian: '🇮🇳 Hindi',
-    chinese: '🇨🇳 Chinois',
-    japanese: '🇯🇵 Japonais',
   },
 };

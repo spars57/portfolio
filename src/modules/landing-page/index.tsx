@@ -19,11 +19,8 @@ function LandingPage() {
       >
         <Navigation />
 
-        <div className="w-full 3 flex flex-row text- p-3 justify-between"></div>
-        <div
-          className="grid grid-rows-1 grid-flow-col place-content-center"
-          style={{ marginTop: 50 }}
-        >
+        <div className="w-full  flex flex-row text- p-3 justify-between"></div>
+        <div className="grid grid-rows-1 grid-flow-col place-content-center">
           <div className="p-3 md:p-0 flex flex-col md:flex-row w-full items-center">
             <div className="flex flex-col">
               <div className="text-5xl font-bold">
@@ -73,11 +70,12 @@ function LandingPage() {
                 </div>
                 <div className="flex flex-row mt-2 space-x-8 md:ml-5">
                   {[
+                    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
                     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
                     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-                    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
                     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-                    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+                    'https://www.svgrepo.com/show/475678/shopify-color.svg',
+                    'https://www.svgrepo.com/show/452075/node-js.svg',
                   ].map((link) => (
                     <img key={link} className="w-10" src={link} />
                   ))}
@@ -86,7 +84,7 @@ function LandingPage() {
             </div>
             <img
               className="rounded-full w-60 h-60 p-2 md:p-0 md:ml-10 mt-5 md:mt-0"
-              src="https://media.licdn.com/dms/image/D4D03AQFE1Nl2zu-cEQ/profile-displayphoto-shrink_800_800/0/1677108925221?e=1697068800&v=beta&t=LQsp_GZlKvExnEOloBtEovipg_Zh4HRmDdigWxDM6nw"
+              src="https://media.licdn.com/dms/image/D4D03AQFki7ybyu1Tow/profile-displayphoto-shrink_800_800/0/1693489588182?e=1698883200&v=beta&t=fI6ibI1KdLIqrsLeV-FB5CoEVu7_hncXbvOnEdW7o5Q"
             ></img>
           </div>
         </div>
@@ -97,7 +95,7 @@ function LandingPage() {
         </div>
         <div className="w-full flex flex-column justify-center mt-5 mb-40">
           <div className="flex flex-column w-2/3">
-            <div className="w-full">
+            <div className="w-full text-justify">
               {language?.landingPage?.aboutText1}
               <br />
               <br />
@@ -105,6 +103,9 @@ function LandingPage() {
               <br />
               <br />
               {language?.landingPage?.aboutText3}
+              <br />
+              <br />
+              {language?.landingPage?.aboutText4}
             </div>
           </div>
         </div>

@@ -16,22 +16,22 @@ export const Navigation: FC<NavigationProps> = ({}) => {
 
   const onSelectLanguage = (e) => {
     const lang = e?.target?.value;
-    console.log(lang);
     switchLanguage(lang);
   };
 
   return (
     <nav
       className={
-        mode === 'light' ? 'bg-white text-gray-900' : 'text-white bg-slate-900'
+        mode === 'light'
+          ? 'bg-slate-100 text-gray-900'
+          : 'text-gray-100 bg-slate-950'
       }
-      style={{ borderBottom: '1px solid lightgray' }}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center">
           <span
             className={`self-center text-2xl font-semibold whitespace-nowrap ${
-              mode === 'light' ? 'text-gray-900' : 'text-white'
+              mode === 'light' ? 'text-gray-950' : 'text-gray-100'
             }`}
           >
             Bruno Moisão
@@ -73,8 +73,8 @@ export const Navigation: FC<NavigationProps> = ({}) => {
           <ul
             className={`font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ${
               mode === 'light'
-                ? 'bg-white text-gray-900'
-                : 'text-white bg-slate-900'
+                ? 'bg-stale-100 text-gray-900'
+                : 'text-gray-100 bg-slate-950'
             }`}
           >
             <li>
@@ -82,8 +82,8 @@ export const Navigation: FC<NavigationProps> = ({}) => {
                 onClick={() => navigate(PATHS.ABOUT)}
                 className={
                   mode === 'light'
-                    ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                    : 'text-white bg-slate-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    ? 'bg-stale-100 text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    : 'text-gray-100 bg-slate-950 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
                 }
               >
                 {language.landingPage.about.toUpperCase()}
@@ -94,8 +94,8 @@ export const Navigation: FC<NavigationProps> = ({}) => {
                 onClick={() => navigate(PATHS.PROJECTS)}
                 className={
                   mode === 'light'
-                    ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                    : 'text-white bg-slate-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    ? 'bg-stale-100 text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    : 'text-gray-100 bg-slate-950 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
                 }
               >
                 {language.landingPage.projects.toUpperCase()}
@@ -106,8 +106,8 @@ export const Navigation: FC<NavigationProps> = ({}) => {
               <a
                 className={
                   mode === 'light'
-                    ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                    : 'text-white bg-slate-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    ? 'bg-stale-100 text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    : 'text-gray-100 bg-slate-950 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
                 }
               >
                 <div className="flex flex-row ">
@@ -115,8 +115,8 @@ export const Navigation: FC<NavigationProps> = ({}) => {
                     id="language-select"
                     className={
                       mode === 'light'
-                        ? 'select bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                        : 'select text-white bg-slate-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                        ? 'select bg-slate-100 text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                        : 'select text-gray-100 bg-slate-950 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
                     }
                     onChange={(p) => onSelectLanguage(p)}
                   >
@@ -135,23 +135,8 @@ export const Navigation: FC<NavigationProps> = ({}) => {
                     <option value="de">
                       {language.languages.german.toUpperCase()}
                     </option>
-                    <option value="ru">
-                      {language.languages.russian.toUpperCase()}
-                    </option>
-                    <option value="ar">
-                      {language.languages.arab.toUpperCase()}
-                    </option>
                     <option value="es">
                       {language.languages.spanish.toUpperCase()}
-                    </option>
-                    <option value="hi">
-                      {language.languages.indian.toUpperCase()}
-                    </option>
-                    <option value="cn">
-                      {language.languages.chinese.toUpperCase()}
-                    </option>
-                    <option value="jp">
-                      {language.languages.japanese.toUpperCase()}
                     </option>
                   </select>
                 </div>
@@ -162,19 +147,19 @@ export const Navigation: FC<NavigationProps> = ({}) => {
                 onClick={switchMode}
                 className={
                   mode === 'light'
-                    ? 'bg-white text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
-                    : 'text-white bg-slate-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    ? 'bg-stale-100 text-gray-900 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
+                    : 'text-gray-100 bg-slate-950 block py-2 pl-3 pr-4 rounded hover:opacity-80 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0  md:dark:hover:text-gray-500 md:dark:hover:bg-transparent'
                 }
               >
                 {mode === 'light' ? (
                   <img
-                    className="w-6"
+                    className="w-5"
                     src="https://www.svgrepo.com/show/515776/dark-mode.svg"
                   />
                 ) : (
                   <img
                     style={mode === 'dark' ? { filter: 'invert(1)' } : {}}
-                    className="w-6"
+                    className="w-5"
                     src="https://www.svgrepo.com/show/432507/light-mode.svg"
                   />
                 )}
